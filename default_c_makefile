@@ -49,7 +49,7 @@ all: ${IMEM} ${DMEM}
 
 
 ${IMEM}: ${IMEM_HEX}
-	sed -i '1i08050137' ${IMEM_HEX}
+	sed -i '1i80050137' ${IMEM_HEX}
 	${MEMDAT} ${IMEM_HEX} ${IMEM} 10000
 
 ${DMEM}: ${DMEM_HEX}
